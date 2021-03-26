@@ -12,6 +12,11 @@
 
     
     echo count($fruits);
+
+    $grades =array("Jeffrey"=>"A+++", "Pam" =>"C--", "Oscar"=>"B++");
+
+    echo $grades["Jeffrey"];
+    echo count($grades);
   ?>
 </body>
 </html>
