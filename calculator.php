@@ -21,16 +21,21 @@
    $num2 = $_POST["secondNumber"];
    $op = $_POST["op"];
 
-   if($op =="+"){
-     echo $num1 + $num2;
-   }elseif($op == "-"){
-     echo $num1 - $num2;
-   }elseif($op == "*"){
-     echo $num1 * $num2;
-   }elseif($op =="/"){
-     echo $num1 / $num2;
-   }else{
-     echo "not valid operation";
+   switch($op){
+      case "+":
+        echo $num1 +$num2;
+        break;
+      case "-":
+        echo $num1 - $num2;
+        break;
+      case "*":
+        echo $num1 * $num2;
+        break;
+      case "/":
+        echo $num1 / $num2;
+        break;
+      
+
    }
  ?>
 
