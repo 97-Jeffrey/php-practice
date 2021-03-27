@@ -5,16 +5,34 @@
 </head>
 <body>
 
-  <form action="calculator.php" method="get">
+  <form action="calculator.php" method="post">
     First Number: <input type="number" name="firstNumber">
    </br></br>
+    Operation: <input type="text" name="op">
+    </br></br>
     Second Number: <input type="number" name="secondNumber">
     </br></br>
     <input type='submit'>
   </form>
   <br>
 
-  The sum of two numbers are <?php echo $_GET["firstNumber"] + $_GET["secondNumber"] ?>
+ <?php
+   $num1 = $_POST["firstNumber"];
+   $num2 = $_POST["secondNumber"];
+   $op = $_POST["op"];
+
+   if($op =="+"){
+     echo $num1 + $num2;
+   }elseif($op == "-"){
+     echo $num1 - $num2;
+   }elseif($op == "*"){
+     echo $num1 * $num2;
+   }elseif($op =="/"){
+     echo $num1 / $num2;
+   }else{
+     echo "not valid operation";
+   }
+ ?>
 
 </body>
 </html>
