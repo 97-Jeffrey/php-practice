@@ -34,6 +34,8 @@
       case "/":
         echo $num1 / $num2;
         break;
+      default:
+        echo "invalid operator";
       
 
    }
