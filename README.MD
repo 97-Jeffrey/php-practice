@@ -1,1 +1,3 @@
-### PHP practices of fundamentals;
+## PHP practices of fundamentals
+
+#### A tiny project:
